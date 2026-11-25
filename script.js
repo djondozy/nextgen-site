@@ -25,6 +25,7 @@ function setMenu(open) {
   burger.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
   menu.hidden = !open;
   document.body.style.overflow = open ? 'hidden' : '';
+  bar.classList.toggle('menu-open', open); document.documentElement.classList.toggle('menu-open-page', open);
   if (open && anim) gsap.fromTo($$('nav a, .btn', menu), { y: 16, opacity: 0 }, { y: 0, opacity: 1, stagger: .04, duration: .45, ease: 'power3.out' });
 }
 burger.addEventListener('click', () => setMenu(burger.getAttribute('aria-expanded') !== 'true'));
