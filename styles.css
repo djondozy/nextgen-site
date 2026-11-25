@@ -926,3 +926,7 @@ em{font-style:normal;color:var(--orange)}
 .menu-mobile{top:100%;left:0;right:0;bottom:auto;height:calc(100vh - 64px);height:calc(100dvh - 64px);z-index:150;background:#fff;box-shadow:0 20px 40px -20px rgba(11,31,58,.25);overscroll-behavior:contain}
 .nav-bar.menu-open{transform:none!important;background:#fff}
 .nav-bar.menu-open ~ .here,.menu-open-page .here{opacity:0!important}
+
+/* menu mobile hors de l'en-tête : toujours au-dessus de tout */
+.menu-mobile{position:fixed;top:64px;left:0;right:0;bottom:0;height:auto;z-index:1000;background:#fff;-webkit-overflow-scrolling:touch}
+.menu-open-page .wa-float,.menu-open-page .here,.menu-open-page .locator{visibility:hidden}
