@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prototype site Next Gen</title>
+<meta name="description" content="Next Gen Solutions, la nouvelle génération du digital au Bénin : une seule équipe pour tous vos projets numériques : logiciels sur mesure, intelligence artificielle, présence en ligne, marchés publics informatiques et fintech.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Next Gen Solutions — La nouvelle génération du digital">
+<meta property="og:description" content="Tout ce qui est informatique, on le fait. Solutions numériques sur mesure au Bénin et en Afrique de l'Ouest.">
+<meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#0B1F3A">
+<link rel="icon" type="image/svg+xml" href="assets/icone.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.gsap)document.documentElement.classList.add('no-anim')},3500)</script>
+</head>
+<body>
+<a class="skip" href="#a-propos">Aller au contenu</a>
+
+<header class="nav-bar">
+  <div class="read-progress" aria-hidden="true"></div>
+  <div class="nav-inner">
+    <a href="#accueil" class="brand" aria-label="Next Gen Solutions, retour à l'accueil"><img src="assets/logo-couleur.svg" alt="Next Gen Solutions" width="150" height="40"></a>
+    <nav aria-label="Menu principal" class="nav">
+      <ul>
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#equipe">Équipe</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#methode">Méthode</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary btn-sm nav-cta" href="#contact">Demander un devis</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span><span></span></button>
+  </div>
+  <div class="menu-mobile" id="menu-mobile" hidden>
+    <nav aria-label="Menu mobile">
+      <a href="#accueil">Accueil</a>
+      <a href="#a-propos">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#equipe">Équipe</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#methode">Méthode</a>
+      <a href="#contact">Contact / devis</a>
+    </nav>
+    <a class="btn btn-primary btn-block" href="#contact">Parler de votre projet</a>
+    <a class="btn btn-wa btn-block js-wa" href="#contact">Écrire sur WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<!-- ============ ACCUEIL ============ -->
+<section id="accueil" class="hero hero-c">
+  <canvas class="hero-3d" aria-hidden="true"></canvas>
+  <canvas class="hero-chev" aria-hidden="true"></canvas>
+  <div class="hero-bg" aria-hidden="true"><div class="hero-lines"></div><div class="hero-spot"></div></div>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="chips" aria-hidden="true">
+    <div class="chip ch1 c3d" data-tag="Encaisser" data-d="1.2"><div class="c3-in">
+      <div class="c3-head"><span class="c3-ico mo"><svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 18h4M9 8h6M9 11h4"/></svg></span><span class="c3-tx"><b>Paiement reçu</b><small>à l'instant · tous moyens</small></span><span class="c3-ok"></span></div>
+      <div class="c3-amt">+ 25 000 <span>F CFA</span></div>
+    </div></div>
+    <div class="chip ch2 c3d" data-tag="Répondre" data-d="1"><div class="c3-in">
+      <div class="c3-head"><span class="c3-ico wa"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1z"/><path d="M9 9.5c.3 1.8 2.6 4.3 4.6 4.6l1.3-1.2 1.6.8c-.2 1-1 1.7-2 1.7-3.5-.3-6.6-3.4-6.8-6.9 0-1 .7-1.8 1.7-2l.8 1.6z"/></svg></span><span class="c3-tx"><b>Assistant WhatsApp</b><small><i class="dot-on"></i>en ligne</small></span></div>
+      <div class="c3-chat"><span class="cb in">Vous livrez à Cotonou ?</span><span class="cb out">Oui, dès demain matin.</span><span class="cb typ"><i></i><i></i><i></i></span></div>
+    </div></div>
+    <div class="chip ch3 c3d" data-tag="Être visible" data-d="1.4"><div class="c3-in">
+      <div class="c3-head"><span class="c3-ico nv"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z"/></svg></span><span class="c3-tx"><b>Votre vitrine en ligne</b><small>Publiée · à jour</small></span></div>
+      <div class="c3-notif"><span class="nf-d"></span><span><b>Nouvelle demande</b><small>« Vous pouvez passer cette semaine ? »</small></span></div>
+    </div></div>
+    <div class="chip ch4 c3d" data-tag="Piloter" data-d=".8"><div class="c3-in">
+      <div class="c3-head"><span class="c3-ico or"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><span class="c3-tx"><b>Tableau de bord</b><small>Ventes de la semaine</small></span></div>
+      <div class="c3-bars"><i style="--h:38%"></i><i style="--h:62%"></i><i style="--h:48%"></i><i style="--h:76%"></i><i style="--h:58%"></i><i style="--h:90%"></i><i style="--h:70%"></i></div>
+    </div></div>
+  </div>
+  <div class="wrap hero-text">
+    <p class="eyebrow r"><span class="live-dot" aria-hidden="true"></span>Next Gen Solutions · Bénin</p>
+    <h1 class="hero-title">
+      <span class="ln"><span class="sp">La nouvelle</span></span>
+      <span class="ln"><span class="sp">génération</span></span>
+      <span class="ln"><span class="sp">du digital<em>.</em></span></span>
+    </h1>
+    <p class="hero-sub r">Une seule équipe pour tous vos projets numériques : nous concevons, développons et sécurisons vos solutions, de l'idée jusqu'à la mise en service.</p>
+    <p class="rotator r" aria-hidden="true">Avec nous, <span class="rot"><span class="rot-w">vos idées deviennent des logiciels</span></span></p>
+    <div class="hero-cta r">
+      <a class="btn btn-primary btn-lg magnetic" href="#contact">Parler de votre projet</a>
+      <a class="link-more" href="#services">Découvrir nos services <span aria-hidden="true">›</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="flap" aria-label="Pour qui nous travaillons">
+  <div class="wrap flap-in">
+    <p class="flap-k"><i class="flap-led"></i>Pour qui on travaille</p>
+    <div class="flap-board" aria-live="off"></div>
+    <p class="sr-only">Entreprises, institutions, commerçants, microfinances, porteurs de projet.</p>
+  </div>
+</section>
+
+<div class="showcase-wrap">
+  <div class="showcase">
+    <canvas class="sc-3d" aria-hidden="true"></canvas>
+    <svg class="sc-chev three" viewBox="0 0 200 100" aria-hidden="true"><polyline class="c0" points="40,18 72,50 40,82"/><polyline class="c1" points="88,18 120,50 88,82"/><polyline class="c2" points="136,18 168,50 136,82"/></svg>
+    <p class="sc-motto">Tout ce qui est informatique,<br><em>on le fait.</em></p>
+    <ul class="sc-axes" aria-label="Nos cinq domaines"><li><span class="ax-n">01</span><span class="ax-t">Logiciels sur mesure</span><i class="ax-scan"></i></li><li><span class="ax-n">02</span><span class="ax-t">IA &amp; automatisation</span><i class="ax-scan"></i></li><li><span class="ax-n">03</span><span class="ax-t">Présence en ligne</span><i class="ax-scan"></i></li><li><span class="ax-n">04</span><span class="ax-t">Marchés publics</span><i class="ax-scan"></i></li><li><span class="ax-n">05</span><span class="ax-t">Fintech</span><i class="ax-scan"></i></li></ul>
+  </div>
+</div>
+
+<!-- ============ À PROPOS ============ -->
+<section id="a-propos" class="section about" aria-label="À propos">
+  <div class="wrap">
+    <h2 class="h2 rv about-t">Qui sommes-nous<em>?</em></h2>
+    <p class="statement">Les entreprises et institutions du Bénin ont besoin d'outils numériques pensés pour <strong>leur réalité</strong>&nbsp;: le <strong>paiement mobile</strong> <span class="pi pi-mm" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10 18h4M9 8h6M9 11h4"/></svg></span>, <strong>WhatsApp</strong> <span class="pi pi-wa" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1z"/><path d="M9 9.5c.3 1.8 2.6 4.3 4.6 4.6l1.3-1.2 1.6.8c-.2 1-1 1.7-2 1.7-3.5-.3-6.6-3.4-6.8-6.9 0-1 .7-1.8 1.7-2l.8 1.6z"/></svg></span>, des <strong>connexions parfois irrégulières</strong>. Nous réunissons <strong>tous les métiers du numérique</strong> pour y répondre avec du <strong>sur-mesure</strong> <span class="pi pi-fit" aria-hidden="true"><svg viewBox="0 0 24 24"><polyline points="6,5 12,12 6,19"/><polyline points="13,5 19,12 13,19"/></svg></span>.</p>
+
+    <div class="vm">
+      <article class="vm-card r"><svg class="vm-vis radar" viewBox="0 0 200 200" aria-hidden="true"><circle class="rg" cx="100" cy="100" r="30"/><circle class="rg" cx="100" cy="100" r="30"/><circle class="rg" cx="100" cy="100" r="30"/><circle cx="100" cy="100" r="7" class="core"/><circle cx="52" cy="70" r="4" class="pt"/><circle cx="150" cy="62" r="4" class="pt"/><circle cx="140" cy="146" r="4" class="pt"/><circle cx="60" cy="140" r="4" class="pt"/><circle cx="104" cy="34" r="4" class="pt"/></svg><span class="vm-k">Notre vision</span><h3>Devenir le partenaire technologique de référence au Bénin et en Afrique de l'Ouest.</h3></article>
+      <article class="vm-card dark r"><svg class="vm-vis flow" viewBox="0 0 160 120" aria-hidden="true"><polyline points="30,20 70,60 30,100"/><polyline points="90,20 130,60 90,100"/></svg><span class="vm-k">Notre mission</span><h3>Concevoir des solutions numériques utiles, sécurisées et adaptées, qui font gagner du temps à nos clients.</h3></article>
+    </div>
+
+    <h2 class="h2 rv">Ce sur quoi on s'engage</h2>
+    <ul class="engage">
+      <li class="r"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 6l3 3"/></svg><b>Sur-mesure</b><span>Chaque solution part de votre besoin, jamais d'un modèle tout fait.</span></li>
+      <li class="r"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8z"/></svg><b>IA utile</b><span>L'intelligence artificielle seulement là où elle vous fait gagner du temps.</span></li>
+      <li class="r"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg><b>Sécurité</b><span>Prévue dès le premier jour, avec un ingénieur dédié dans l'équipe.</span></li>
+      <li class="r"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><b>Proximité</b><span>Un seul interlocuteur, qui connaît le terrain et vos contraintes.</span></li>
+      <li class="r"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5l2-2v6h-6l2.5-2.5A5.5 5.5 0 1 0 17.5 14"/></svg><b>Accompagnement</b><span>Formation, maintenance et évolutions après la livraison.</span></li>
+    </ul>
+
+    <div class="publics r">
+      <p class="publics-k">Pour qui nous travaillons</p>
+      <ul>
+        <li>PME et commerces</li>
+        <li>Entreprises et institutions</li>
+        <li>Startups et entrepreneurs</li>
+        <li>Clients et partenaires hors du Bénin</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HUMAIN × TECHNOLOGIE ============ -->
+<section class="meet" aria-labelledby="meet-t">
+  <div class="wrap meet-txt">
+    <h2 id="meet-t" class="meet-t"><span class="m1">Là où</span> <span class="m2"><b>l'humain</b> rencontre</span> <span class="m3"><b>la technologie</b><em>.</em></span></h2>
+    <p class="meet-sub">Des outils qui servent les personnes, pas l'inverse.</p>
+  </div>
+  <div class="meet-img card-img" aria-hidden="true"><img src="assets/humain-tech.jpg" alt="" width="1024" height="530" loading="lazy" decoding="async"><span class="spark"></span></div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="section services">
+  <div class="wrap">
+        <h2 class="h2 rv">Cinq axes.<br>Une seule équipe<em>.</em></h2>
+    <p class="lead r svc-lead">Choisissez un domaine : tout part du même cœur, la même équipe.</p>
+    <div class="svc-sys">
+      <div class="sys sys-v" role="tablist" aria-label="Nos cinq domaines">
+        <svg class="sys-wires" aria-hidden="true"></svg>
+        <div class="sys-core" aria-hidden="true"><span class="core-ring"></span><span class="core-ring r2"></span><svg class="sc-chev three" viewBox="0 0 200 100"><polyline class="c0" points="40,18 72,50 40,82"/><polyline class="c1" points="88,18 120,50 88,82"/><polyline class="c2" points="136,18 168,50 136,82"/></svg><span class="core-l">Next Gen</span></div>
+        <button type="button" class="node n1" data-i="0" aria-controls="sp1"><span class="nd-top"><span class="nd-n">01</span><span class="nd-led"></span></span><svg class="nd-ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="26" rx="4"/><path d="M6 15h36M18 42h12M24 34v8M13 22h8M13 27h14"/></svg><b class="nd-t">Logiciels sur mesure</b><small>Gestion · Portails · Stocks</small><span class="nd-prog"><i></i></span></button><button type="button" class="node n2" data-i="1" aria-controls="sp2"><span class="nd-top"><span class="nd-n">02</span><span class="nd-led"></span></span><svg class="nd-ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l3.5 13.5L41 22l-13.5 3.5L24 39l-3.5-13.5L7 22l13.5-3.5z"/></svg><b class="nd-t">IA &amp; automatisation</b><small>Assistants · Documents · Rapports</small><span class="nd-prog"><i></i></span></button><button type="button" class="node n3" data-i="2" aria-controls="sp3"><span class="nd-top"><span class="nd-n">03</span><span class="nd-led"></span></span><svg class="nd-ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M7 24h34M24 7c5 5 7 11 7 17s-2 12-7 17c-5-5-7-11-7-17s2-12 7-17z"/></svg><b class="nd-t">Présence en ligne</b><small>Vitrine · Identité · Réseaux</small><span class="nd-prog"><i></i></span></button><button type="button" class="node n4" data-i="3" aria-controls="sp4"><span class="nd-top"><span class="nd-n">04</span><span class="nd-led"></span></span><svg class="nd-ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40h36M9 40V20M19 40V20M29 40V20M39 40V20M4 20h40L24 7z"/></svg><b class="nd-t">Marchés publics</b><small>Appels d'offres · Offre technique</small><span class="nd-prog"><i></i></span></button><button type="button" class="node n5" data-i="4" aria-controls="sp5"><span class="nd-top"><span class="nd-n">05</span><span class="nd-led"></span></span><svg class="nd-ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="11" width="38" height="26" rx="4"/><path d="M5 19h38M11 30h11"/><circle cx="35" cy="29" r="4"/></svg><b class="nd-t">Fintech</b><small>Paiements · Épargne · Microfinance</small><span class="nd-prog"><i></i></span></button>
+      </div>
+      <div class="svc-panels">
+      <article class="svc-p on" id="sp1" role="tabpanel">
+        <div class="sp-head"><span class="sp-n">01</span><svg class="sp-ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="26" rx="4"/><path d="M6 15h36M18 42h12M24 34v8M13 22h8M13 27h14"/></svg></div>
+        <h3>Logiciels sur mesure</h3><p>Des outils qui collent à votre façon de travailler.</p>
+        <ul class="ex"><li>Gestion de stock et de ventes</li><li>Factures normalisées (e-MECeF)</li><li>Plateformes de réservation</li><li>Portails internes</li><li>Paiements intégrés : Mobile Money, carte, virement</li></ul>
+        <div class="mock" aria-hidden="true">
+          <div class="mock-top"><i></i><i></i><i></i><span></span></div>
+          <div class="mock-body">
+            <div class="mock-side"><b></b><b></b><b></b><b></b></div>
+            <div class="mock-main">
+              <div class="mock-cards"><div></div><div></div><div></div></div>
+              <div class="mock-chart"><span style="--h:42%"></span><span style="--h:65%"></span><span style="--h:50%"></span><span style="--h:80%"></span><span style="--h:58%"></span><span style="--h:92%"></span><span style="--h:70%"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <a class="link-more light js-type" data-type="Logiciel sur mesure" href="#contact">Parler de ce projet <span aria-hidden="true">›</span></a>
+      </article>
+      <article class="svc-p" id="sp2" role="tabpanel">
+        <div class="sp-head"><span class="sp-n">02</span><svg class="sp-ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l3.5 13.5L41 22l-13.5 3.5L24 39l-3.5-13.5L7 22l13.5-3.5z"/></svg></div>
+        <h3>Intelligence artificielle &amp; automatisation</h3><p>Les tâches répétitives se font toutes seules, votre équipe se concentre sur l'essentiel.</p>
+        <ul class="ex"><li>Assistants WhatsApp</li><li>Classement de documents</li><li>Devis et rapports automatisés</li></ul>
+        <div class="term" aria-hidden="true"><div class="term-top"><i></i><i></i><i></i><span>next-gen · ia & automatisation</span></div><ol><li><span class="tp">›</span><span class="tl">message reçu : « devis pour 50 cartons »</span></li><li><span class="tp">›</span><span class="tl">intention détectée : demande de devis</span></li><li><span class="tp">›</span><span class="tl">devis généré depuis le catalogue</span></li><li><span class="tp">›</span><span class="tl">envoyé au client ✓</span></li></ol></div>
+        <a class="link-more light js-type" data-type="IA et automatisation" href="#contact">Parler de ce projet <span aria-hidden="true">›</span></a>
+      </article>
+      <article class="svc-p" id="sp3" role="tabpanel">
+        <div class="sp-head"><span class="sp-n">03</span><svg class="sp-ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17"/><path d="M7 24h34M24 7c5 5 7 11 7 17s-2 12-7 17c-5-5-7-11-7-17s2-12 7-17z"/></svg></div>
+        <h3>Présence en ligne, marketing digital &amp; contenus</h3><p>Une image claire et professionnelle, partout où vos clients vous cherchent.</p>
+        <ul class="ex"><li>Vitrine en ligne et pages institutionnelles</li><li>Identité visuelle</li><li>Réseaux sociaux et vidéos</li></ul>
+        <div class="term" aria-hidden="true"><div class="term-top"><i></i><i></i><i></i><span>next-gen · présence en ligne</span></div><ol><li><span class="tp">›</span><span class="tl">vitrine en ligne · publiée ✓</span></li><li><span class="tp">›</span><span class="tl">identité visuelle · validée</span></li><li><span class="tp">›</span><span class="tl">publication planifiée · lundi 09:00</span></li><li><span class="tp">›</span><span class="tl">messages clients · centralisés</span></li></ol></div>
+        <a class="link-more light js-type" data-type="Présence en ligne ou marketing digital" href="#contact">Parler de ce projet <span aria-hidden="true">›</span></a>
+      </article>
+      <article class="svc-p" id="sp4" role="tabpanel">
+        <div class="sp-head"><span class="sp-n">04</span><svg class="sp-ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 40h36M9 40V20M19 40V20M29 40V20M39 40V20M4 20h40L24 7z"/></svg></div>
+        <h3>Marchés publics informatiques</h3><p>Réponses aux appels d'offres informatiques de l'État et des collectivités, avec une offre technique complète.</p>
+        <ul class="ex"><li>Analyse du dossier d'appel d'offres</li><li>Offre technique et financière</li><li>Fourniture et installation</li></ul>
+        <div class="term" aria-hidden="true"><div class="term-top"><i></i><i></i><i></i><span>next-gen · marchés publics</span></div><ol><li><span class="tp">›</span><span class="tl">dossier d'appel d'offres · analysé</span></li><li><span class="tp">›</span><span class="tl">exigences techniques · vérifiées</span></li><li><span class="tp">›</span><span class="tl">offre technique · rédigée</span></li><li><span class="tp">›</span><span class="tl">dossier déposé dans les délais ✓</span></li></ol></div>
+        <a class="link-more light js-type" data-type="Marché public" href="#contact">Parler de ce projet <span aria-hidden="true">›</span></a>
+      </article>
+      <article class="svc-p" id="sp5" role="tabpanel">
+        <div class="sp-head"><span class="sp-n">05</span><svg class="sp-ico" viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="11" width="38" height="26" rx="4"/><path d="M5 19h38M11 30h11"/><circle cx="35" cy="29" r="4"/></svg></div>
+        <h3>Fintech &amp; paiements numériques</h3><p>Encaisser, épargner et suivre son argent simplement, quel que soit le moyen de paiement.</p>
+        <ul class="ex"><li>Intégration des paiements (Mobile Money, carte, virement)</li><li>Outils pour microfinances</li><li>Épargne automatique</li></ul>
+        <div class="term" aria-hidden="true"><div class="term-top"><i></i><i></i><i></i><span>next-gen · fintech</span></div><ol><li><span class="tp">›</span><span class="tl">paiement reçu · 25 000 F · confirmé</span></li><li><span class="tp">›</span><span class="tl">épargne automatique · +1 000 F</span></li><li><span class="tp">›</span><span class="tl">rapprochement des comptes · OK</span></li><li><span class="tp">›</span><span class="tl">reçu envoyé au client ✓</span></li></ol></div>
+        <a class="link-more light js-type" data-type="Fintech ou paiement" href="#contact">Parler de ce projet <span aria-hidden="true">›</span></a>
+      </article>
+      </div>
+    </div>
+    <div class="support">
+      <p>Et en appui de chaque projet</p>
+      <ul><li>Cybersécurité</li><li>Design</li><li>Maintenance<sup>*</sup></li><li>Formation</li><li>Conseil</li></ul>
+      <small>* Maintenance uniquement sur les installations réalisées par Next Gen Solutions.</small>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ SCÈNE 1 : ORDINATEUR — devis automatique ============ -->
+<section class="scene scene-web" aria-labelledby="sw-t">
+  <div class="scene-stage">
+    <div class="wrap scene-head">
+      <h2 class="h2" id="sw-t">Un devis qui part tout seul</h2>
+      <p class="lead">Un client écrit sur WhatsApp, l'assistant comprend la demande, prépare le devis et l'envoie. Votre équipe n'a plus qu'à suivre.</p>
+      <p class="scene-tag">Scénario type</p>
+    </div>
+    <div class="laptop" aria-hidden="true">
+      <div class="lid">
+        <div class="cam"></div>
+        <div class="screen dv">
+          <div class="mbar"><span class="mb-l"><svg viewBox="0 0 24 24"><polyline points="6,5 12,12 6,19"/><polyline points="13,5 19,12 13,19"/></svg><b>Automatisation</b><span>Fichier</span><span>Édition</span><span>Affichage</span></span><span class="mb-r"><svg viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19" r="1"/></svg><i class="bat"></i>mer. 09:41</span></div>
+          <div class="s-top"><i></i><i></i><i></i><span>Next Gen · Automatisation</span></div>
+          <div class="s-body">
+            <div class="chat">
+              <div class="chat-h"><span class="wa-dot"></span><b>WhatsApp Business</b><small>Client</small></div>
+              <div class="bub in b1">Bonjour, je voudrais un devis pour 50 cartons de savon.</div>
+              <div class="typing"><i></i><i></i><i></i></div>
+              <div class="bub out b2">Bonjour ! Je prépare votre devis tout de suite.</div>
+              <div class="bub out b3"><span class="pdf">PDF</span><span><b>Devis_savon.pdf</b><small>Prêt à télécharger</small></span></div>
+            </div>
+            <div class="flow-p">
+              <p class="flow-t">Scénario automatique</p>
+              <ol class="wf">
+                <li><span class="wf-c"></span>Message reçu sur WhatsApp</li>
+                <li><span class="wf-c"></span>Demande comprise par l'IA</li>
+                <li><span class="wf-c"></span>Devis généré depuis le catalogue</li>
+                <li><span class="wf-c"></span>Devis envoyé au client</li>
+                <li><span class="wf-c"></span>Rappel planifié pour l'équipe</li>
+              </ol>
+              <div class="toast"><span class="tk"></span>Devis envoyé automatiquement</div>
+            </div>
+          </div>
+          <div class="glare"></div>
+        </div>
+      </div>
+      <div class="base"><span></span></div>
+      <div class="shadow"></div>
+    </div>
+    <ol class="scene-steps" aria-hidden="true"><li>Message reçu</li><li>Demande comprise</li><li>Devis prêt</li><li>Envoyé</li></ol>
+  </div>
+</section>
+
+<!-- ============ SCÈNE 2 : TÉLÉPHONE ============ -->
+<section class="scene scene-phone" aria-labelledby="sp-t">
+  <div class="wrap sp-grid">
+    <div class="sp-text">
+      <h2 class="h2 rv" id="sp-t">L'épargne,<br>sans y penser</h2>
+      <p class="lead r">Un exemple d'outil fintech pensé pour chez nous&nbsp;: on fixe un objectif, l'application met de côté un peu chaque jour par Mobile Money.</p>
+      <p class="scene-tag r">Scénario type</p>
+      <ol class="sp-steps">
+        <li class="on"><b>On choisit un objectif</b><span>Un congélateur pour la boutique, un stock, un projet.</span></li>
+        <li><b>On active l'épargne automatique</b><span>1 000 F mis de côté chaque jour, sans y penser.</span></li>
+        <li><b>On voit l'épargne grandir</b><span>Chaque versement est confirmé, la progression est claire.</span></li>
+        <li><b>L'objectif est atteint</b><span>La somme est disponible, prête à être utilisée.</span></li>
+      </ol>
+    </div>
+    <div class="sp-device">
+      <div class="phone" aria-hidden="true">
+        <div class="ph-btn b-a"></div><div class="ph-btn b-b"></div><div class="ph-btn b-c"></div>
+        <div class="ph-screen">
+          <div class="island"></div>
+          <div class="ph-status"><b>9:41</b><span class="sig"><i></i><i></i><i></i></span></div>
+          <!-- écran 1 : objectif -->
+          <div class="pv pv1 on">
+            <div class="ph-h"><small>Mon épargne</small><b>Nouvel objectif</b></div>
+            <div class="goal"><span class="g-ico"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M5 10h14M8 6.5h2M8 13.5h2"/></svg></span><div><b>Congélateur boutique</b><small>Objectif</small></div><em>250 000 F</em></div>
+            <div class="due"><small>Échéance souhaitée</small><b>8 mois</b><span>Soit environ 1 000 F par jour</span></div>
+            <div class="ph-cta">Continuer</div>
+          </div>
+          <!-- écran 2 : activation -->
+          <div class="pv pv2">
+            <div class="ph-h"><small>Épargne automatique</small><b>1 000 F / jour</b></div>
+            <div class="opt-row"><span>Prélèvement Mobile Money</span><span class="tg"><i></i></span></div>
+            <div class="opt-row"><span>Me prévenir à chaque versement</span><span class="tg on"><i></i></span></div>
+            <div class="opt-row"><span>Pause possible à tout moment</span><span class="tg on"><i></i></span></div>
+            <div class="paid"><span class="ok-c"></span><b>Épargne activée</b><small>Premier versement demain</small></div>
+          </div>
+          <!-- écran 3 : progression -->
+          <div class="pv pv3">
+            <div class="ph-h"><small>Congélateur boutique</small><b>Ça avance</b></div>
+            <div class="ring"><svg viewBox="0 0 120 120"><circle class="r-bg" cx="60" cy="60" r="50"/><circle class="r-fg" cx="60" cy="60" r="50"/></svg><div class="r-txt"><b><span class="r-n">62</span> %</b><small>de l'objectif</small></div></div>
+            <ul class="mem dep"><li><span>+</span>Aujourd'hui<i class="ok"></i></li><li><span>+</span>Hier<i class="ok"></i></li><li><span>+</span>Lundi<i class="ok"></i></li></ul>
+          </div>
+          <!-- écran 4 : objectif atteint -->
+          <div class="pv pv4">
+            <div class="win"><span class="win-c"></span><small>Objectif atteint</small><b>Congélateur boutique</b><span class="win-amt">250 000 F</span><small>Disponibles sur votre compte Mobile Money</small></div>
+          </div>
+          <div class="ph-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÉTHODE ============ -->
+<section id="methode" class="section methode">
+  <div class="wrap methode-grid">
+    <div class="methode-head">
+      <h2 class="h2 rv">Comment on travaille</h2>
+      <p class="lead r">Sept étapes, toujours dans le même ordre. Vous savez à chaque instant où en est votre projet.</p>
+      <a class="btn btn-primary r" href="#contact">Démarrer un projet</a>
+    </div>
+    <ol class="steps">
+      <li class="step"><span class="sn">1</span><div><h3>Découverte</h3><p>On écoute votre besoin, vos clients et vos contraintes.</p></div></li>
+      <li class="step"><span class="sn">2</span><div><h3>Cadrage</h3><p>Périmètre, priorités et planning validés ensemble.</p></div></li>
+      <li class="step"><span class="sn">3</span><div><h3>Conception</h3><p>Maquettes et parcours, validés avant tout développement.</p></div></li>
+      <li class="step"><span class="sn">4</span><div><h3>Développement</h3><p>Par étapes courtes, avec des démonstrations régulières.</p></div></li>
+      <li class="step"><span class="sn">5</span><div><h3>Sécurité et tests</h3><p>Revue de code, contrôles de sécurité et tests avant la mise en ligne.</p></div></li>
+      <li class="step"><span class="sn">6</span><div><h3>Mise en ligne et formation</h3><p>Déploiement, puis formation de vos équipes.</p></div></li>
+      <li class="step"><span class="sn">7</span><div><h3>Suivi</h3><p>Maintenance, améliorations et évolutions.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ ÉQUIPE ============ -->
+<section id="equipe" class="section equipe">
+  <div class="wrap">
+    <h2 class="h2 rv">L'équipe</h2>
+    <p class="lead r">Sept profils complémentaires. Vous parlez à une seule personne, toute l'équipe travaille pour vous.</p>
+    <div class="team-grid">
+      <figure class="tm">
+        <div class="tm-ph" data-ini="N"><img src="assets/equipe/nora.jpg" alt="Photo de Nora OGOUCHINA" loading="lazy" onerror="this.remove()"><span class="tm-wait">Photo à venir</span></div>
+        <figcaption><b>Nora <span class="tm-last">OGOUCHINA</span></b><span class="tm-role">Gestionnaire de projet</span></figcaption>
+      </figure>
+      <figure class="tm">
+        <div class="tm-ph" data-ini="C"><img src="assets/equipe/cedric.jpg" alt="Photo de Cédric DJONDO" loading="lazy" onerror="this.remove()"><span class="tm-wait">Photo à venir</span></div>
+        <figcaption><b>Cédric <span class="tm-last">DJONDO</span></b><span class="tm-role">Designer UI/UX · Chef de projet adjoint</span></figcaption>
+      </figure>
+      <figure class="tm">
+        <div class="tm-ph" data-ini="R"><img src="assets/equipe/ryann.jpg" alt="Photo de Ryann" loading="lazy" onerror="this.remove()"><span class="tm-wait">Photo à venir</span></div>
+        <figcaption><b>Ryann <span class="tm-last">[Nom]</span></b><span class="tm-role">Ingénieur développeur full-stack</span></figcaption>
+      </figure>
+      <figure class="tm">
+        <div class="tm-ph" data-ini="M"><img src="assets/equipe/maxenx.jpg" alt="Photo de Maxenx" loading="lazy" onerror="this.remove()"><span class="tm-wait">Photo à venir</span></div>
+        <figcaption><b>Maxenx <span class="tm-last">[Nom]</span></b><span class="tm-role">Ingénieur développeur full-stack</span></figcaption>
+      </figure>
+      <figure class="tm">
+        <div class="tm-ph" data-ini="Y"><img src="assets/equipe/yoan.jpg" alt="Photo de Yoan" loading="lazy" onerror="this.remove()"><span class="tm-wait">Photo à venir</span></div>
+        <figcaption><b>Yoan <span class="tm-last">[Nom]</span></b><span class="tm-role">Ingénieur cybersécurité</span></figcaption>
+      </figure>
+      <figure class="tm">
+        <div class="tm-ph" data-ini="S"><img src="assets/equipe/sylvason.jpg" alt="Photo de Sylvason" loading="lazy" onerror="this.remove()"><span class="tm-wait">Photo à venir</span></div>
+        <figcaption><b>Sylvason <span class="tm-last">[Nom]</span></b><span class="tm-role">Responsable marketing digital &amp; identité visuelle</span></figcaption>
+      </figure>
+      <figure class="tm">
+        <div class="tm-ph" data-ini="J"><img src="assets/equipe/jaures.jpg" alt="Photo de Jaurès" loading="lazy" onerror="this.remove()"><span class="tm-wait">Photo à venir</span></div>
+        <figcaption><b>Jaurès <span class="tm-last">[Nom]</span></b><span class="tm-role">Ingénieur IA · Veille technologique</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RÉALISATIONS ============ -->
+<section id="realisations" class="section realisations">
+  <div class="wrap">
+    <div class="prep r">
+      <div class="prep-visual" aria-hidden="true"><svg viewBox="0 0 120 80"><polyline points="30,14 56,40 30,66"/><polyline points="64,14 90,40 64,66"/></svg></div>
+      <div>
+        <h2 class="h2">Projets en préparation</h2>
+        <p class="lead">Nos premières références seront publiées dès que nos clients auront validé leur diffusion. Ici, uniquement des projets réels.</p>
+        <a class="link-more" href="#contact">Être parmi nos premiers clients <span aria-hidden="true">›</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="section faq" aria-labelledby="faq-t">
+  <div class="wrap faq-grid">
+    <div><h2 class="h2 rv" id="faq-t">Ce qu'on nous demande souvent</h2></div>
+    <div class="faq-list">
+      <details class="qa r"><summary>Travaillez-vous avec des clients hors du Bénin ?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Oui. Nous accompagnons aussi des clients et partenaires ailleurs en Afrique de l'Ouest et au-delà, à distance, avec un suivi régulier.</p></div></details>
+      <details class="qa r"><summary>Pouvez-vous intégrer les paiements en ligne ?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Oui : nous intégrons les moyens de paiement de vos clients (Mobile Money, carte bancaire, virement) dans vos logiciels, vitrines en ligne et outils de gestion.</p></div></details>
+      <details class="qa r"><summary>Comment se déroule un projet ?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>En sept étapes, de la découverte au suivi. Vous validez les maquettes avant le développement et vous voyez le travail avancer à chaque étape.</p></div></details>
+      <details class="qa r"><summary>Assurez-vous la maintenance ?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Oui, pour les solutions et installations réalisées par Next Gen Solutions : maintenance, corrections et évolutions.</p></div></details>
+      <details class="qa r"><summary>Faut-il connaître son budget pour demander un devis ?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>Non. Le budget indicatif est facultatif : décrivez votre besoin, nous construisons la proposition avec vous.</p></div></details>
+      <details class="qa r"><summary>Mes données sont-elles protégées ?<span class="pm" aria-hidden="true"></span></summary><div class="ans"><p>La sécurité est prévue dès la conception de chaque solution, avec un ingénieur cybersécurité dans l'équipe.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info">
+      <h2 class="h2 rv">Parlons de<br>votre projet</h2>
+      <p class="lead r">Décrivez votre besoin : la gestionnaire de projet vous recontacte pour en discuter.</p>
+      <a class="btn btn-wa r js-wa" href="#contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1z"/><path d="M9 9.5c.3 1.8 2.6 4.3 4.6 4.6l1.3-1.2 1.6.8c-.2 1-1 1.7-2 1.7-3.5-.3-6.6-3.4-6.8-6.9 0-1 .7-1.8 1.7-2l.8 1.6z"/></svg>Écrire sur WhatsApp</a>
+      <ul class="coords r">
+        <li><span>E-mail</span><b>[contact@ à confirmer]</b></li>
+        <li><span>Réseaux</span><b>@nextgensolutions.africa</b></li>
+        <li><span>Localisation</span><b>Bénin</b></li>
+      </ul>
+    </div>
+
+    <form id="contact-form" class="form r" novalidate>
+      <div class="row2">
+        <div class="field"><label for="f-nom">Nom <i>*</i></label><input id="f-nom" name="nom" type="text" maxlength="80" required autocomplete="name"><small class="err" id="e-nom"></small></div>
+        <div class="field"><label for="f-org">Organisation <i>*</i></label><input id="f-org" name="organisation" type="text" maxlength="100" required autocomplete="organization" placeholder="Entreprise, institution ou « Particulier »"><small class="err" id="e-org"></small></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="f-email">E-mail <i>*</i></label><input id="f-email" name="email" type="email" maxlength="120" required autocomplete="email" inputmode="email"><small class="err" id="e-email"></small></div>
+        <div class="field"><label for="f-tel">Téléphone <span class="opt">(facultatif)</span></label><input id="f-tel" name="telephone" type="tel" maxlength="25" autocomplete="tel" inputmode="tel" placeholder="+229 01 …"><small class="err" id="e-tel"></small></div>
+      </div>
+      <div class="field"><label for="f-type">Type de projet <i>*</i></label>
+        <select id="f-type" name="type" required>
+          <option value="">Choisir…</option>
+          <option>Logiciel sur mesure</option>
+          <option>IA et automatisation</option>
+          <option>Présence en ligne ou marketing digital</option>
+          <option>Marché public</option>
+          <option>Fintech ou paiement</option>
+          <option>Autre</option>
+        </select><small class="err" id="e-type"></small></div>
+      <div class="field"><label for="f-desc">Description du projet <i>*</i></label><textarea id="f-desc" name="description" rows="5" maxlength="2000" required></textarea><small class="hint" id="h-desc">20 caractères minimum</small><small class="err" id="e-desc"></small></div>
+      <div class="field"><label for="f-budget">Budget indicatif <span class="opt">(facultatif)</span></label><input id="f-budget" name="budget" type="text" maxlength="60" placeholder="Ex. à définir ensemble"></div>
+      <div class="hp" aria-hidden="true"><label for="f-site">Ne pas remplir</label><input id="f-site" name="site" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="consent"><input id="f-consent" name="consent" type="checkbox" required><label for="f-consent">J'accepte que Next Gen Solutions utilise ces informations pour me recontacter au sujet de ma demande. <a href="confidentialite.html">Politique de confidentialité</a></label></div>
+      <small class="err" id="e-consent"></small>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Envoyer ma demande</button>
+      <p class="confirm" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<a class="wa-float js-wa" href="#contact" aria-label="Écrire à Next Gen Solutions sur WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19.1z"/><path d="M9 9.5c.3 1.8 2.6 4.3 4.6 4.6l1.3-1.2 1.6.8c-.2 1-1 1.7-2 1.7-3.5-.3-6.6-3.4-6.8-6.9 0-1 .7-1.8 1.7-2l.8 1.6z"/></svg><span class="wa-lbl">WhatsApp</span></a>
+
+<footer class="footer">
+  <div class="foot-giant" aria-hidden="true">NEXT GEN</div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/logo-couleur.svg" alt="Next Gen Solutions" width="150" height="40">
+        <p>Solutions numériques sur mesure, intelligence artificielle, présence en ligne et fintech, au Bénin et en Afrique de l'Ouest.</p>
+        <p class="motto">Tout ce qui est informatique, on le fait.</p>
+      </div>
+      <div><h4>Navigation</h4><ul><li><a href="#a-propos">À propos</a></li><li><a href="#services">Services</a></li><li><a href="#equipe">Équipe</a></li><li><a href="#methode">Méthode</a></li><li><a href="#faq">Questions fréquentes</a></li><li><a href="#contact">Contact / devis</a></li></ul></div>
+      <div><h4>Réseaux</h4><ul><li>Facebook</li><li>Instagram</li><li>LinkedIn</li><li>TikTok</li></ul><p class="small">@nextgensolutions.africa</p></div>
+      <div><h4>Contact</h4><ul><li><a class="js-wa" href="#contact">WhatsApp Business</a></li><li>[contact@ à confirmer]</li><li>Bénin</li></ul></div>
+    </div>
+    <div class="foot-legal">
+      <p>© 2026 Next Gen Solutions. La nouvelle génération du digital.</p>
+      <p><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Politique de confidentialité</a></p>
+    </div>
+  </div>
+</footer>
+
+<nav class="locator" aria-label="Où vous êtes sur la page">
+  <a href="#a-propos" data-s="a-propos"><i></i><span>À propos</span></a>
+  <a href="#services" data-s="services"><i></i><span>Services</span></a>
+  <a href="#methode" data-s="methode"><i></i><span>Méthode</span></a>
+  <a href="#equipe" data-s="equipe"><i></i><span>Équipe</span></a>
+  <a href="#realisations" data-s="realisations"><i></i><span>Réalisations</span></a>
+  <a href="#faq" data-s="faq"><i></i><span>FAQ</span></a>
+  <a href="#contact" data-s="contact"><i></i><span>Contact</span></a>
+</nav>
+<div class="cursor" aria-hidden="true"><span class="cursor-ring"></span><span class="cursor-dot"></span></div>
+<div class="here" aria-hidden="true"><span class="here-n">01</span><span class="here-t">À propos</span><span class="here-bar"><i></i></span></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
