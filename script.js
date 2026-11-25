@@ -192,10 +192,15 @@ if (anim) {
     mt.to('.meet-t span', { yPercent: 0, opacity: 1, stagger: .14, duration: .9, ease: 'power4.out' })
       .to('.meet-sub', { yPercent: 0, opacity: 1, duration: .7, ease: 'power3.out' }, '-=.5');
     gsap.fromTo('.meet-img', { scale: .92, y: 40 }, { scale: 1, y: 0, ease: 'none', scrollTrigger: { trigger: '.meet', start: 'top bottom', end: 'bottom 60%', scrub: true } });
-    gsap.timeline({ scrollTrigger: { trigger: '.meet-img', start: 'center 62%', end: 'bottom top', toggleActions: 'play reverse play reverse' } })
-      .fromTo('.spark', { opacity: 0, scale: .3 }, { opacity: 1, scale: 1.25, duration: .35, ease: 'power2.out' })
-      .to('.spark', { opacity: .55, scale: 1, duration: .8, ease: 'power2.inOut' })
-      .add(() => gsap.to('.spark', { opacity: .9, scale: 1.12, duration: 1.4, ease: 'sine.inOut', yoyo: true, repeat: -1 }));
+    // les deux mains se rapprochent avec le défilement, l'étincelle part au contact
+    const sp = $('.spark'), ring = $('.spark-ring'); let touched = false;
+    const touch = on => { if (on === touched) return; touched = on;
+      if (on) { gsap.fromTo(sp, { opacity: 0, scale: .2 }, { opacity: 1, scale: 1.3, duration: .3, ease: 'power2.out', onComplete: () => gsap.to(sp, { opacity: .75, scale: 1, duration: 1.2, ease: 'sine.inOut', yoyo: true, repeat: -1 }) });
+        gsap.fromTo(ring, { opacity: .9, scale: .2 }, { opacity: 0, scale: 2.6, duration: 1.1, ease: 'power2.out' }); }
+      else { gsap.killTweensOf(sp); gsap.to(sp, { opacity: 0, duration: .3 }); } };
+    gsap.timeline({ scrollTrigger: { trigger: '.meet-img', start: 'top 90%', end: 'center 50%', scrub: true, onUpdate: t => touch(t.progress > .985) } })
+      .fromTo('.mi-l', { xPercent: -16, rotate: -2 }, { xPercent: 0, rotate: 0, ease: 'power1.out' }, 0)
+      .fromTo('.mi-r', { xPercent: 16, rotate: 2 }, { xPercent: 0, rotate: 0, ease: 'power1.out' }, 0);
   }
 
   /* Méthode */
