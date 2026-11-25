@@ -642,6 +642,16 @@ $$('.sys').forEach(function sysWires(sys) {
     const i = nearest(t); if (i >= 0 && i !== lit) { lit = i; lis[i].classList.add('lit'); setTimeout(() => lis[i].classList.remove('lit'), 700); } });
 })();
 
+/* Pour qui on travaille : chaque ligne s'allume quand elle passe au centre de l'écran */
+(function audience() {
+  const rows = $$('.aud-r'); if (!rows.length) return;
+  if (anim) {
+    rows.forEach(r => gsap.fromTo(r.querySelectorAll('.aud-n, .aud-t, .aud-d'), { y: 30, opacity: 0 }, { y: 0, opacity: 1, stagger: .07, duration: .8, ease: 'power3.out', scrollTrigger: { trigger: r, start: 'top 90%', toggleActions: 'play none none reverse' } }));
+    gsap.fromTo('.aud-h', { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power4.out', scrollTrigger: { trigger: '.aud', start: 'top 80%', toggleActions: 'play none none reverse' } });
+  }
+  rows.forEach(r => ScrollTrigger.create({ trigger: r, start: 'top 55%', end: 'bottom 55%', onToggle: t => r.classList.toggle('on', t.isActive) }));
+})();
+
 /* Souris : point orange + anneau qui suit, grossit sur les liens */
 (function cursor() {
   const c = $('.cursor'); if (!c || !fine || reduce || !window.gsap) return;
